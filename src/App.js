@@ -1,30 +1,21 @@
-import React from 'react';
-import './App.css';
-import Travel from './Travel';
-import Travels from './Travels';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
-  return (
-    <>
-      <Travel
-        destination='Lisbon'
-        country='Portugal'
-        photo='https://cdn.pixabay.com/photo/2016/06/11/20/47/lisbon-1450809_1280.jpg'
-        distance='OKm'
+import Travels from "./Travels";
 
-      />
-      <Travel
-        destination='Paris'
-        country='France'
-        photo='https://cdn.pixabay.com/photo/2016/11/23/18/10/architecture-1854130_1280.jpg'
-        distance='1800km'
-      />
-      <Travels />
-
-    </>
-  )
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Trips</h1>
+        </header>
+        <Travels />
+      </div>
+    );
+  }
 }
-
-
 
 export default App;
