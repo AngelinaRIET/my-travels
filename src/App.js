@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Travel from './Travel';
+import Travels from './Travels';
 
 function App() {
   return (
@@ -18,8 +19,12 @@ function App() {
         photo='https://cdn.pixabay.com/photo/2016/11/23/18/10/architecture-1854130_1280.jpg'
         distance='1800km'
       />
+      <Travels />
+
     </>
-  );
+  )
 }
+
+
 
 export default App;
